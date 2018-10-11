@@ -15,12 +15,12 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 O-R-G inc. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>tetracono.saverView</string>
+	<string>Tetracono.saverView</string>
 </dict>
 </plist>

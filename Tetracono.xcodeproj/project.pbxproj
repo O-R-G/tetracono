@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		072FF688214A1CE100C7BD75 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		072FF689214A1CE100C7BD75 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
-		9336711F1FFC0E8A007CCCEB /* tetracono.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tetracono.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		9336711F1FFC0E8A007CCCEB /* Tetracono.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tetracono.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		933671261FFC0E8A007CCCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933C90101FFC70A7004F93BB /* saverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saverView.swift; sourceTree = "<group>"; };
 		93CA31EC1FFDCCAA004D7F50 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		933671201FFC0E8A007CCCEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9336711F1FFC0E8A007CCCEB /* tetracono.saver */,
+				9336711F1FFC0E8A007CCCEB /* Tetracono.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9336711E1FFC0E8A007CCCEB /* tetracono */ = {
+		9336711E1FFC0E8A007CCCEB /* Tetracono */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 933671291FFC0E8A007CCCEB /* Build configuration list for PBXNativeTarget "tetracono" */;
+			buildConfigurationList = 933671291FFC0E8A007CCCEB /* Build configuration list for PBXNativeTarget "Tetracono" */;
 			buildPhases = (
 				9336711A1FFC0E8A007CCCEB /* Sources */,
 				9336711B1FFC0E8A007CCCEB /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = tetracono;
+			name = Tetracono;
 			productName = tetracono;
-			productReference = 9336711F1FFC0E8A007CCCEB /* tetracono.saver */;
+			productReference = 9336711F1FFC0E8A007CCCEB /* Tetracono.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 933671191FFC0E8A007CCCEB /* Build configuration list for PBXProject "tetracono" */;
+			buildConfigurationList = 933671191FFC0E8A007CCCEB /* Build configuration list for PBXProject "Tetracono" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9336711E1FFC0E8A007CCCEB /* tetracono */,
+				9336711E1FFC0E8A007CCCEB /* Tetracono */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		933671191FFC0E8A007CCCEB /* Build configuration list for PBXProject "tetracono" */ = {
+		933671191FFC0E8A007CCCEB /* Build configuration list for PBXProject "Tetracono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				933671271FFC0E8A007CCCEB /* Debug */,
@@ -319,7 +319,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		933671291FFC0E8A007CCCEB /* Build configuration list for PBXNativeTarget "tetracono" */ = {
+		933671291FFC0E8A007CCCEB /* Build configuration list for PBXNativeTarget "Tetracono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9336712A1FFC0E8A007CCCEB /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:tetracono.xcodeproj">
+      location = "self:/Users/eric/dev/Screensavers/tetracono/Tetracono.xcodeproj">
    </FileRef>
 </Workspace>
