@@ -12,6 +12,6 @@ import Cocoa
 
 extension Bundle {
     static func pathAwareBundle() -> Bundle {
-        return Bundle(for:object_getClass(saverView.self))
+        return Bundle(for:object_getClass(saverView.self)!)
     }
 }

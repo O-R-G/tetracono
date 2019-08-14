@@ -28,7 +28,10 @@ class saverView: ScreenSaverView {
         let cone = SCNCone(topRadius: 0.0*scale, bottomRadius: 1.0*scale, height: 1.0*scale)
         cone.radialSegmentCount = detail
         // cone.firstMaterial?.diffuse.contents = NSColor.red
-        cone.firstMaterial?.diffuse.contents = NSImage(pathAwareName: "texture.png")
+        cone.firstMaterial?.diffuse.contents = NSImage(pathAwareName: "texture_small.png")
+        // prevents weird sampling of 8x8 texture
+        cone.firstMaterial?.diffuse.minificationFilter = .nearest
+        cone.firstMaterial?.diffuse.magnificationFilter = .nearest
 
 // array of colors for materials
 // but cone only has three "sides" to its geometry, so this doesnt help
@@ -77,15 +80,15 @@ class saverView: ScreenSaverView {
         // create and add a light to the scene
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
-        lightNode.light!.type = SCNLight.LightType.omni
+        lightNode.light?.type = SCNLight.LightType.omni
         lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
         scene.rootNode.addChildNode(lightNode)
         
         // create and add an ambient light to the scene
         let ambientLightNode = SCNNode()
         ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = SCNLight.LightType.ambient
-        ambientLightNode.light!.color = NSColor.darkGray
+        ambientLightNode.light?.type = SCNLight.LightType.ambient
+        ambientLightNode.light?.color = NSColor.darkGray
         scene.rootNode.addChildNode(ambientLightNode)
                 
         // better handled in an array
@@ -146,8 +149,8 @@ class saverView: ScreenSaverView {
         // show statistics such as fps and timing information
         scnView?.showsStatistics = false
         
-        // fixes low FPS if you need it
-        // scnView?.antialiasingMode = .None
+        // fixes low FPS
+         scnView?.antialiasingMode = .none
     }
     
     override init?(frame: NSRect, isPreview: Bool) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07027AF02303A7380008694D /* texture_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 07027AEF2303A7380008694D /* texture_small.png */; };
 		072FF68A214A1CE100C7BD75 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 072FF688214A1CE100C7BD75 /* thumbnail.png */; };
 		072FF68B214A1CE100C7BD75 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072FF689214A1CE100C7BD75 /* thumbnail@2x.png */; };
 		933C90111FFC70A7004F93BB /* saverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C90101FFC70A7004F93BB /* saverView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07027AEF2303A7380008694D /* texture_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_small.png; sourceTree = "<group>"; };
 		072FF688214A1CE100C7BD75 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		072FF689214A1CE100C7BD75 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		9336711F1FFC0E8A007CCCEB /* Tetracono.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tetracono.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,7 @@
 				93CA31EC1FFDCCAA004D7F50 /* NSImageExtensions.swift */,
 				93CA31EE1FFDCDB0004D7F50 /* NSBundleExtensions.swift */,
 				93CA31F01FFDCE8A004D7F50 /* texture.png */,
+				07027AEF2303A7380008694D /* texture_small.png */,
 				072FF688214A1CE100C7BD75 /* thumbnail.png */,
 				072FF689214A1CE100C7BD75 /* thumbnail@2x.png */,
 				933671261FFC0E8A007CCCEB /* Info.plist */,
@@ -109,7 +112,7 @@
 				TargetAttributes = {
 					9336711E1FFC0E8A007CCCEB = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +123,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 933671151FFC0E8A007CCCEB;
 			productRefGroup = 933671201FFC0E8A007CCCEB /* Products */;
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				072FF68A214A1CE100C7BD75 /* thumbnail.png in Resources */,
+				07027AF02303A7380008694D /* texture_small.png in Resources */,
 				93CA31F11FFDCE8A004D7F50 /* texture.png in Resources */,
 				072FF68B214A1CE100C7BD75 /* thumbnail@2x.png in Resources */,
 			);
@@ -213,6 +218,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -265,6 +271,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -283,7 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.tetracono";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -302,7 +309,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.tetracono";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
