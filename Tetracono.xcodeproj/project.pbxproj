@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07027AF02303A7380008694D /* texture_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 07027AEF2303A7380008694D /* texture_small.png */; };
 		072FF68A214A1CE100C7BD75 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 072FF688214A1CE100C7BD75 /* thumbnail.png */; };
 		072FF68B214A1CE100C7BD75 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072FF689214A1CE100C7BD75 /* thumbnail@2x.png */; };
 		933C90111FFC70A7004F93BB /* saverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C90101FFC70A7004F93BB /* saverView.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07027AEF2303A7380008694D /* texture_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_small.png; sourceTree = "<group>"; };
 		072FF688214A1CE100C7BD75 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		072FF689214A1CE100C7BD75 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		9336711F1FFC0E8A007CCCEB /* Tetracono.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tetracono.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +60,6 @@
 				93CA31EC1FFDCCAA004D7F50 /* NSImageExtensions.swift */,
 				93CA31EE1FFDCDB0004D7F50 /* NSBundleExtensions.swift */,
 				93CA31F01FFDCE8A004D7F50 /* texture.png */,
-				07027AEF2303A7380008694D /* texture_small.png */,
 				072FF688214A1CE100C7BD75 /* thumbnail.png */,
 				072FF689214A1CE100C7BD75 /* thumbnail@2x.png */,
 				933671261FFC0E8A007CCCEB /* Info.plist */,
@@ -107,7 +104,7 @@
 		933671161FFC0E8A007CCCEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "O-R-G inc.";
 				TargetAttributes = {
 					9336711E1FFC0E8A007CCCEB = {
@@ -141,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				072FF68A214A1CE100C7BD75 /* thumbnail.png in Resources */,
-				07027AF02303A7380008694D /* texture_small.png in Resources */,
 				93CA31F11FFDCE8A004D7F50 /* texture.png in Resources */,
 				072FF68B214A1CE100C7BD75 /* thumbnail@2x.png in Resources */,
 			);
@@ -189,6 +185,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -197,6 +194,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -214,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -248,6 +246,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +255,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -267,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -282,11 +282,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2T5W462SEL;
 				INFOPLIST_FILE = tetracono/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.tetracono";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -302,11 +303,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2T5W462SEL;
 				INFOPLIST_FILE = tetracono/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.tetracono";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

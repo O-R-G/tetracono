@@ -28,7 +28,9 @@ class saverView: ScreenSaverView {
         let cone = SCNCone(topRadius: 0.0*scale, bottomRadius: 1.0*scale, height: 1.0*scale)
         cone.radialSegmentCount = detail
         // cone.firstMaterial?.diffuse.contents = NSColor.red
-        cone.firstMaterial?.diffuse.contents = NSImage(pathAwareName: "texture_small.png")
+        // cone.firstMaterial?.diffuse.contents = NSImage(pathAwareName: "texture_small.png")
+        cone.firstMaterial?.diffuse.contents = NSImage(pathAwareName: "texture.png")
+
         // prevents weird sampling of 8x8 texture
         cone.firstMaterial?.diffuse.minificationFilter = .nearest
         cone.firstMaterial?.diffuse.magnificationFilter = .nearest
