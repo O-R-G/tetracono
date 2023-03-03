@@ -2,7 +2,7 @@
 
 Tetracono
 Designed by Bruno Munari
-Version 1.1, macOS 10.14+, 2023
+Version 1.1, 2023
 
 --
 
