@@ -13,7 +13,20 @@
 		93CA31ED1FFDCCAA004D7F50 /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA31EC1FFDCCAA004D7F50 /* NSImageExtensions.swift */; };
 		93CA31EF1FFDCDB0004D7F50 /* NSBundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA31EE1FFDCDB0004D7F50 /* NSBundleExtensions.swift */; };
 		93CA31F11FFDCE8A004D7F50 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CA31F01FFDCE8A004D7F50 /* texture.png */; };
+		93D4DE8E2BC70D780088AE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4DE8D2BC70D780088AE80 /* AppDelegate.swift */; };
+		93D4DE902BC70D790088AE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D4DE8F2BC70D790088AE80 /* Assets.xcassets */; };
+		93D4DE932BC70D790088AE80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 93D4DE922BC70D790088AE80 /* Base */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93D4DE982BC70FF70088AE80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 933671161FFC0E8A007CCCEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9336711E1FFC0E8A007CCCEB;
+			remoteInfo = Tetracono;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		072FF688214A1CE100C7BD75 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
@@ -24,10 +37,22 @@
 		93CA31EC1FFDCCAA004D7F50 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
 		93CA31EE1FFDCDB0004D7F50 /* NSBundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBundleExtensions.swift; sourceTree = "<group>"; };
 		93CA31F01FFDCE8A004D7F50 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		93D4DE8B2BC70D780088AE80 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D4DE8D2BC70D780088AE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93D4DE8F2BC70D790088AE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93D4DE922BC70D790088AE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93D4DE942BC70D790088AE80 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9336711B1FFC0E8A007CCCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D4DE882BC70D780088AE80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +65,7 @@
 		933671151FFC0E8A007CCCEB = {
 			isa = PBXGroup;
 			children = (
+				93D4DE8C2BC70D780088AE80 /* Runner */,
 				933671211FFC0E8A007CCCEB /* tetracono */,
 				933671201FFC0E8A007CCCEB /* Products */,
 			);
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				9336711F1FFC0E8A007CCCEB /* Tetracono.saver */,
+				93D4DE8B2BC70D780088AE80 /* Runner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +92,17 @@
 				933671261FFC0E8A007CCCEB /* Info.plist */,
 			);
 			path = tetracono;
+			sourceTree = "<group>";
+		};
+		93D4DE8C2BC70D780088AE80 /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				93D4DE8D2BC70D780088AE80 /* AppDelegate.swift */,
+				93D4DE8F2BC70D790088AE80 /* Assets.xcassets */,
+				93D4DE912BC70D790088AE80 /* MainMenu.xib */,
+				93D4DE942BC70D790088AE80 /* Runner.entitlements */,
+			);
+			path = Runner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,18 +136,41 @@
 			productReference = 9336711F1FFC0E8A007CCCEB /* Tetracono.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		93D4DE8A2BC70D780088AE80 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93D4DE972BC70D790088AE80 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				93D4DE872BC70D780088AE80 /* Sources */,
+				93D4DE882BC70D780088AE80 /* Frameworks */,
+				93D4DE892BC70D780088AE80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93D4DE992BC70FF70088AE80 /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 93D4DE8B2BC70D780088AE80 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		933671161FFC0E8A007CCCEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "O-R-G inc.";
 				TargetAttributes = {
 					9336711E1FFC0E8A007CCCEB = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+					};
+					93D4DE8A2BC70D780088AE80 = {
+						CreatedOnToolsVersion = 15.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				9336711E1FFC0E8A007CCCEB /* Tetracono */,
+				93D4DE8A2BC70D780088AE80 /* Runner */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +202,15 @@
 				072FF68A214A1CE100C7BD75 /* thumbnail.png in Resources */,
 				93CA31F11FFDCE8A004D7F50 /* texture.png in Resources */,
 				072FF68B214A1CE100C7BD75 /* thumbnail@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D4DE892BC70D780088AE80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D4DE902BC70D790088AE80 /* Assets.xcassets in Resources */,
+				93D4DE932BC70D790088AE80 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +227,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93D4DE872BC70D780088AE80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D4DE8E2BC70D780088AE80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93D4DE992BC70FF70088AE80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9336711E1FFC0E8A007CCCEB /* Tetracono */;
+			targetProxy = 93D4DE982BC70FF70088AE80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93D4DE912BC70D790088AE80 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D4DE922BC70D790088AE80 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		933671271FFC0E8A007CCCEB /* Debug */ = {
@@ -316,6 +414,73 @@
 			};
 			name = Release;
 		};
+		93D4DE952BC70D790088AE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5W462SEL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 O-R-G inc. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		93D4DE962BC70D790088AE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T5W462SEL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 O-R-G inc. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.o-r-g.Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +498,15 @@
 			buildConfigurations = (
 				9336712A1FFC0E8A007CCCEB /* Debug */,
 				9336712B1FFC0E8A007CCCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93D4DE972BC70D790088AE80 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D4DE952BC70D790088AE80 /* Debug */,
+				93D4DE962BC70D790088AE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
